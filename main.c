@@ -8,6 +8,7 @@ int main(int argc, char const *argv[])
     initialisation(terrain, &joueur, &caisse, &objectif);
 
     int game = 1;
+    printf("\n\033[0;33mBienvenue au jeu du Sokoban !\033[0m\n\033[1;33mPour jouer, utilisez les touches z, q, s, d pour vous déplacer\033[0m\n\n");
     while (game)
     {
         system("clear");

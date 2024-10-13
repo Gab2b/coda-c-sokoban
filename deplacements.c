@@ -32,7 +32,7 @@ void microswitch(char terrain[10][10], int valeur, char xouy, xy *joueur, xy *ca
                 break;
 
             case '.':
-            printf("Vous ne pouvez vous approcher de votre objectif, c'est ici que vous devez placer la caisse (X)");
+            printf("\033[1;31mVous ne pouvez vous approcher de votre objectif, c'est ici que vous devez placer la caisse (X)\033[0m");
                 break;
 
             default:
@@ -86,7 +86,7 @@ void deplacement(char terrain[10][10], xy *joueur, xy *caisse, xy *objectif)
     // Saisie du déplacement 
 
     char choix;
-    printf("\nChoisissez un mouvement : haut(z), bas(s), droite(d), gauche(q)\n- ");
+    printf("\n\033[0;35mChoisissez un mouvement : haut(z), bas(s), droite(d), gauche(q)\n- \033[0m");
     scanf(" %c", &choix);
 
     switch (choix)
